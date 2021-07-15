@@ -1,0 +1,12 @@
+/* si en title.component.html no hay una etiqueta de las que defino su estilo en este archivo, se obvia su estilo, es codigo basura */
+header{
+    max-width: 1000px;
+    text-align: center;
+}
+h1{
+    background-color: purple;
+    margin-bottom: 10px;
+}
+p{
+    color: green;
+}
