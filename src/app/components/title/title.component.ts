@@ -12,7 +12,7 @@ export class TitleComponent implements OnInit {
 //title = "titulo del h1";
 //subtitle = "subtitle del h1";
 // valor predeterminado o indicador de opcional, sino se rompe en el @input!
-@Input() title?: string;
+@Input() title="Contenido";
 @Input() subtitle?: string;
 
   ngOnInit(): void {

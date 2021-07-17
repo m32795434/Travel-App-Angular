@@ -1,12 +1,17 @@
 /* si en title.component.html no hay una etiqueta de las que defino su estilo en este archivo, se obvia su estilo, es codigo basura */
-header{
+header {
     max-width: 1000px;
     text-align: center;
+    margin: 0 auto 40px;
 }
-h1{
-    background-color: purple;
+
+h1 {
+    color: rebeccapurple;
     margin-bottom: 10px;
 }
-p{
-    color: green;
+
+p {
+    color: #555;
+    text-transform: uppercase;
+    font-size: 14px;
 }
