@@ -9,7 +9,7 @@ export class CardComponent implements OnInit {
 
   constructor() { }
 
-  @Input() imagen = "/assets/images/img1.jpeg";
+  @Input() imagen?: string;
   @Input() categoria?: string;
   @Input() titulo = "Esta es la aventura";
   @Input() precio = 123;

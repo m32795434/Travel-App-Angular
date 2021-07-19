@@ -6,29 +6,29 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Gatitos';
+  title = '¡Viajes!';
   subtitle = 'Todo lo que necesitas saber';
 
   cards = [
     {
-      imagen: "/assets/images/imagen-placeholder.jpg",
+      imagen: "/assets/australia.jpg",
       categoria: "Vuelos",
       titulo: "Australia",
       precio: 635
     },
     {
-      imagen: "/assets/images/austin.jpg",
+      imagen: "/assets/austin.jpg",
       titulo: "Austin",
       precio: 55
     },
     {
-      imagen: "/assets/images/melbourne.jpg",
+      imagen: "/assets/melbourne.jpg",
       categoria: "Alojamiento",
       titulo: "Melbourne",
       precio: 245
     },
     {
-      imagen: "/assets/images/medellin.jpg",
+      imagen: "/assets/colombia.jpg",
       categoria: "Vuelos",
       titulo: "Colombia",
       precio: 103

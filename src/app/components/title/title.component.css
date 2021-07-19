@@ -8,6 +8,7 @@ header {
 h1 {
     color: rebeccapurple;
     margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 p {

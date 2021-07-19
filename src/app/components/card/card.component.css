@@ -2,6 +2,7 @@
     max-width: 256px;
     border: 1px solid #DDD;
     border-radius: 8px;
+    
 }
 .card-img {
     border-radius: 8px 8px 0 0;
@@ -16,7 +17,7 @@
 .card-info_cat {
     margin-top: 0;
     margin-bottom: 8px;
-    /* text-transform: uppercase; */
+    /* text-transform: uppercase; lo voy a hacer por medio de una pipe*/
     font-size: 12px;
     color: #666;
 }

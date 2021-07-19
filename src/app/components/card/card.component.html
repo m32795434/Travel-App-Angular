@@ -1,18 +1,20 @@
 <div class="card">
-	<img src="{{ imagen }}" alt="" class="card-img">
+	<img src="{{ imagen }}" alt="#" class="card-img">
     <div class="card-info">
         <header class="card-info_header">
             <!--
                 El párrafo se crea solo si se entrega el elemento categoria 
-            -->
+            si quiero usar un SINO:<p *ngIf="!categoria">-->
             <p *ngIf="categoria" class="card-info_cat">
+                <!-- | pipes: https://angular.io/guide/pipes -->
                 {{ categoria | uppercase }}
             </p>
             <h2 class="card-info_title">{{ titulo }}</h2>
         </header>
         <p class="card-info_precio">
-            <span class="card-precio_icono">$</span>
-            <span class="card-precio_numero">{{ precio }}</span>
+            <!-- <span class="card-precio_icono">$</span> -->
+            <!-- FORMATEADO EN DOLARES AMERICANOS -->
+            <span class="card-precio_numero">{{ precio | currency: 'USD' }}</span>
         </p>
     </div>
 </div>

@@ -3,3 +3,16 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
 }
+app-card{
+    justify-self: center;
+}
+@media (max-width: 1024px) {
+    .card-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 767px) {
+    .card-wrapper{
+        grid-template-columns: 1fr;
+    }
+}
