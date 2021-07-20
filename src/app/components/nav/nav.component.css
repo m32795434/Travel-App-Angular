@@ -1,0 +1,23 @@
+.nav{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding:5px 0;
+    background-color: rgb(71, 70, 70);
+}
+.nav-item{
+    flex-grow: 1;
+    
+}
+.nav-item_link{
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+    background-color:#d2fbd0;
+    text-decoration: none;
+    border-radius: 30px;
+}
+.nav-item_link:hover{
+background-color: #ACC8E5;
+text-decoration: underline;
+}
