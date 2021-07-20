@@ -1,0 +1,14 @@
+<app-title
+    [title]="title"
+    [subtitle]="subtitle"
+></app-title>
+
+<div class="card-wrapper">
+    <app-card
+        *ngFor="let card of cards"
+        [imagen]="card.imagen"
+        [categoria]="card.categoria"
+        [titulo]="card.titulo"
+        [precio]="card.precio"
+    ></app-card>
+</div>
