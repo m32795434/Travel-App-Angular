@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GatitoService } from 'src/app/gatito.service';
 
 @Component({
   selector: 'app-contacto',
@@ -7,11 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactoComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private gatitoService: GatitoService
+  
+  ) { }
   title= 'Sección Contacto';
   subtitle= 'Contactanos!';
+datita: any;
+
+  showKittens () {
+    this.gatitoService.getKittens()
+    .subscribe((data: any)=>{
+      console.log(data);
+      this.datita = data;
+    });
+  }
 
   ngOnInit(): void {
+    this.showKittens();
   }
   
 
